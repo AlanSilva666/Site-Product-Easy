@@ -1,71 +1,51 @@
-###################
-What is CodeIgniter
-###################
+Site feito com Framework Codelgnither(version 3.1.13) + PHP(version 8.2.12).
+Linguagens: PHP, HTML, CSS3 e JavaScript.
+Banco de dados: MySql.
+Padrão MVC.
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Configurações referentes à banco de dados, estão localizadas no diretório application/config.
+Utilizei o XAMPP para configurar o ambiente necessário para rodar o Projeto em uma máquina local.
+Com o XAMPP instalado e configurado, basta criar o Projeto no diretório xampp/htdocs, abrir o xampp-control e Startar o Apache e o MySQL.
+Geralmente a url necessária para visualização em navegador é: http://localhost/seu_projeto/index.php/diretorio/index.
+Está url também já é padrão Codelgnither, que é o Framework que utilizei para o Desenvolvimento deste Projeto.
+Mas o Projeto pode ser configurados em outros pacotes, além do xampp.
 
-*******************
-Release Information
-*******************
+O site contém incialmente uma Tela Login. 
+Nela pede um CPF e uma Senha para entrar, também tem a opção de CRIAR CONTA / ESQUECEU A SENHA.
+Só será possível, acessar a página home do Site, passando pela Tela Login.
+Há envio de emails configurados, tanto para Cadastro de Conta, quanto o esquecimento da senha.
+Ou seja, no momento que for realizar o cadastro, terá que preenchar algumas informações, uma delas é o email.
+Assim que preencher todas as informações, e realizar o cadastro, será enviado um email de boas vindas ao Sitema.
+Este email é enviado para o email preenchido no formulário em questão.
+O mesmo se repete para Esqueceu Senha, caso o usuário esqueça a senha, é possível altera-lá.
+Alterando, será enviado um email para o email preenchido no formulário de Cadastro.
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+Com um Login(CPF) e Senha criados.
+Basta acessar o site.
 
-**************************
-Changelog and New Features
-**************************
+Construi um site com base no Curso de HTML+CSS+JavaScript que realizei na Plataforma Curso em Vídeo.
+E também com base em Experência que tive na área de Desenvolvimento Full Stack.
+Então o conteúdo(escritas) do site é o mesmo que aprendi no Curso citado, porém coloquei minhas ideias e estilo.
+Se trata de uma divulgação do produto Óculos Google Glass.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+Analisando o contéudo sobre o produto, o usuário tem a opção de fazer uma compra do produto pela guia Faça Seu Pedido.
+Nela consta um formulário de compra, onde o usuário terá que preencher informações referentes, uma delas é o email.
+A compra sendo realizada, é enviado um email para o email que foi preenchido no formulário em questão.
+Atulamente, não realizei a funcionalidade de gerar boletos.
+Então, consta apenas um email informando os detalhes da compra e o valor à pagar.
 
-*******************
-Server Requirements
-*******************
+Assim que que a compra é realizada e o email é enviado, o usuário é redirecionado para a página Listar Pedidos.
+Que é a página onde ficará listada os pedidos realizados.
 
-PHP version 5.6 or newer is recommended.
+Nela o usuário tem a opção de Editar o Pedido, ou até mesmo Deletar o Pedido.
+Qualquer uma destas ações, será enviado um email, informando a ação.
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+Utilizei também funcionalidades como API, para buscar CEP.
+Você pode encontrar está funcionalidade, no momneto de fazer um pedido.
 
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Por fim, o projeto é voltado a um Site de Compras.
+Aonde se pode analisar um produto e realizar a compra do mesmo, tudo que envolve INSERT, UPDATE e DELETE é enviado para o Banco de Dados Mysql, com toda segurança necessária.
+E também qualquer uma dessas três ações realizadas no geral dentro do projeto, é enviado uma email, que sempre será preenchido em formulários refentes.
+E uma observação importante, é que no momento que se cria um usuário para acessar o site, é necessário criar uma senha, a mesma é criptografada, quando se conclui o cadastro.
+Outro ponto é importante, é que pode ser realizadas várias ações de compra dentro do site.
+Porém, ficará vinculada somente ao usuário logado em questão.
