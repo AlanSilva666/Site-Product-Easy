@@ -1,0 +1,14 @@
+{
+    "require": {
+        "mpdf/mpdf": "^8.2",
+        "phpoffice/phpspreadsheet": "^2.1",
+        "symfony/string": "^6.0",
+        "phpoffice/phpword": "^1.2",
+        "openboleto/openboleto": "^0.2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "application/"
+        }
+    }
+}
