@@ -53,5 +53,5 @@ Porém, ficará vinculada somente ao usuário logado em questão.
 A identificação do usuário é mostrada por um id, na url em questão.
 Exemplo: http://localhost/seu_projeto/index.php/home/index/1
 O mesmo se repete quando um pedido é realizado. Um novo id é criado, referente ao pedido, e consequentemente é adicionado também a url, quando a mesma é acessada.
-Exemplo: http://localhost/seu_proejto/index.php/home/editar_pedido/1/62
+Exemplo: http://localhost/seu_projeto/index.php/home/editar_pedido/1/62
 
