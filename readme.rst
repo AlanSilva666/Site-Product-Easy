@@ -49,3 +49,9 @@ E também qualquer uma dessas três ações realizadas no geral dentro do projet
 E uma observação importante, é que no momento que se cria um usuário para acessar o site, é necessário criar uma senha, a mesma é criptografada, quando se conclui o cadastro.
 Outro ponto é importante, é que pode ser realizadas várias ações de compra dentro do site.
 Porém, ficará vinculada somente ao usuário logado em questão.
+
+A identificação do usuário é mostrada por um id, na url em questão.
+Exemplo: http://localhost/seu_projeto/index.php/home/index/1
+O mesmo se repete quando um pedido é realizado. Um novo id é criado, referente ao pedido, e consequentemente é adicionado também a url, quando a mesma é acessada.
+Exemplo: http://localhost/seu_proejto/index.php/home/editar_pedido/1/62
+
