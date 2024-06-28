@@ -45,7 +45,7 @@ Você pode encontrar está funcionalidade, no momento de fazer um pedido.
 
 Por fim, o projeto é voltado a um Site de Compras.
 Aonde se pode analisar um produto e realizar a compra do mesmo, tudo que envolve INSERT, UPDATE e DELETE é enviado para o Banco de Dados Mysql, com toda segurança necessária.
-E também qualquer uma dessas três ações realizadas no geral dentro do projeto, é enviado uma email, que sempre será preenchido em formulários referentes.
+E também qualquer uma dessas três ações realizadas no geral dentro do projeto, é enviado um email, que sempre será preenchido em formulários referentes.
 E uma observação importante, é que no momento que se cria um usuário para acessar o site, é necessário criar uma senha, a mesma é criptografada, quando se conclui o cadastro.
 Outro ponto é importante, é que pode ser realizadas inúmeras ações de compra dentro do site.
 Porém, ficará vinculada somente ao usuário logado em questão.
