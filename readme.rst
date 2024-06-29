@@ -1,57 +1,55 @@
-Site feito com Framework Codelgnither(version 3.1.13) + PHP(version 8.2.12).
-Linguagens: PHP, HTML, CSS3 e JavaScript.
-Banco de dados: MySql.
-Padrão MVC.
+Projeto de Site utilizando CodeIgniter (v3.1.13) e PHP (v8.2.12)
+Linguagens de Programação: PHP, HTML, CSS3, JavaScript.
+Banco de Dados: MySQL.
+Padrão: MVC (Model-View-Controller).
 
-Configurações referentes à banco de dados, estão localizadas no diretório application/config.
-Utilizei o XAMPP para configurar o ambiente necessário para rodar o Projeto em uma máquina local.
-Com o XAMPP instalado e configurado, basta criar o Projeto no diretório xampp/htdocs, abrir o xampp-control e Startar o Apache e o MySQL.
-Geralmente a url necessária para visualização em navegador é: http://localhost/seu_projeto/index.php/diretorio/index.
-Está url também já é padrão Codelgnither, que é o Framework que utilizei para o Desenvolvimento deste Projeto.
-Mas o Projeto pode ser configurado em outros pacotes, além do xampp.
+Configuração e Ambiente
+O projeto foi desenvolvido utilizando o XAMPP para criar o ambiente local necessário. 
+As configurações de banco de dados estão localizadas no diretório application/config.
 
-O site contém incialmente uma Tela Login. 
-Nela pede um CPF e uma Senha para entrar, também tem a opção de CRIAR CONTA / ESQUECEU A SENHA.
-Só será possível, acessar a página home do Site, passando pela Tela Login inicial.
-Há envio de emails configurados, tanto para Cadastro de Conta, quanto o esquecimento da senha.
-Ou seja, no momento que for realizar o cadastro, terá que preencher algumas informações, uma delas é o email.
-Assim que preencher todas as informações, e realizar o cadastro, será enviado um email de boas vindas ao Site.
-Este email é enviado para o email preenchido no formulário em questão.
-O mesmo se repete para Esqueceu Senha, caso o usuário esqueça a senha, é possível altera-lá.
-Alterando, será enviado um email para o email preenchido no formulário de Cadastro.
+Para rodar o projeto:
+Instale e configure o XAMPP.
+Crie o projeto no diretório xampp/htdocs.
+Abra o XAMPP Control Panel e inicie o Apache e o MySQL.
+Acesse o projeto pelo navegador com a URL padrão do CodeIgniter: http://localhost/seu_projeto/index.php/diretorio/index.
+O projeto pode ser configurado em outros pacotes além do XAMPP.
 
-Com um Login(CPF) e Senha criados.
-Basta acessar o site.
+Funcionalidades do Site
+Tela de Login:
+A tela inicial exige CPF e senha para acesso.
+Opções de "Criar Conta" e "Esqueceu a Senha" estão disponíveis.
+O acesso à página principal só é permitido após a autenticação.
 
-Construi o site com base no Curso de HTML+CSS+JavaScript que realizei na Plataforma Curso em Vídeo.
-E também com base e Experência que tive na área de Desenvolvimento Full Stack.
-Então o conteúdo(escritas) do site é o mesmo que aprendi no Curso citado, porém coloquei minhas ideias e estilo.
-Se trata da divulgação do produto Óculos Google Glass.
+Cadastro e Recuperação de Senha:
+Envio de emails configurado para cadastro e recuperação de senha.
+No cadastro, o usuário preenche um formulário, incluindo o email.
+Um email de boas-vindas é enviado após o cadastro.
+Para recuperação de senha, um email é enviado para redefinição.
+Após a atualização da senha, um email é enviado confirmando a atualização.
 
-Analisando o contéudo sobre o produto, o usuário tem a opção de fazer uma compra do produto pela guia Faça Seu Pedido.
-Nela consta um formulário de compra, onde o usuário terá que preencher informações referentes, uma delas é o email.
-A compra sendo realizada, é enviado um email para o email que foi preenchido no formulário em questão.
-Atulamente, não realizei a funcionalidade de gerar boletos.
-Então, consta apenas um email informando os detalhes da compra e o valor à pagar.
+Divulgação e Compra do Produto:
+O site divulga o produto Óculos Google Glass.
+Opção de compra disponível na guia "Faça Seu Pedido".
+Após preencher o formulário de compra, um email de confirmação é enviado.
+Redirecionamento para a página "Listar Pedidos" após a compra.
 
-Assim que que a compra é realizada e o email é enviado, o usuário é redirecionado para a página Listar Pedidos.
-No qual é página onde ficará listada os pedidos realizados.
+Gestão de Pedidos:
+O usuário pode editar ou deletar pedidos.
+Ações de edição ou deleção de pedidos também enviam notificações por email.
+Funcionalidade de API:
+Busca de CEP configurada no momento da realização do pedido.
 
-Nela o usuário tem a opção de Editar o Pedido, ou até mesmo Deletar o Pedido.
-Qualquer uma destas ações, será enviado um email, informando a ação.
+Segurança e Criptografia:
+Senhas de usuários são criptografadas ao serem criadas.
 
-Utilizei também funcionalidades de API, para buscar CEP.
-Você pode encontrar está funcionalidade, no momento de fazer um pedido.
+Todas as operações de INSERT, UPDATE e DELETE são realizadas com segurança no banco de dados MySQL.
+Emails são enviados para cada ação relevante no site.
 
-Por fim, o projeto é voltado a um Site de Compras.
-Aonde se pode analisar um produto e realizar a compra do mesmo, tudo que envolve INSERT, UPDATE e DELETE é enviado para o Banco de Dados Mysql, com toda segurança necessária.
-E também qualquer uma dessas três ações realizadas no geral dentro do projeto, é enviado um email, que sempre será preenchido em formulários referentes.
-E uma observação importante, é que no momento que se cria um usuário para acessar o site, é necessário criar uma senha, a mesma é criptografada, quando se conclui o cadastro.
-Outro ponto é importante, é que pode ser realizadas inúmeras ações de compra dentro do site.
-Porém, ficará vinculada somente ao usuário logado em questão.
+Identificação de Usuário e Pedidos:
+A identificação do usuário é mostrada na URL, ex: http://localhost/seu_projeto/index.php/home/index/1.
+Pedidos realizados também recebem um ID na URL, ex: http://localhost/seu_projeto/index.php/home/editar_pedido/1/62.
 
-A identificação do usuário é mostrada por um id, na url em questão.
-Exemplo: http://localhost/seu_projeto/index.php/home/index/1
-O mesmo se repete quando um pedido é realizado. Um novo id é criado, referente ao pedido, e consequentemente é adicionado também a url, quando a mesma é acessada.
-Exemplo: http://localhost/seu_projeto/index.php/home/editar_pedido/1/62
+Experiência e Aprendizado
+Este projeto foi baseado no curso de HTML, CSS e JavaScript realizado na plataforma Curso em Vídeo, complementado com minha experiência prática em Desenvolvimento Full Stack. O conteúdo e o design do site refletem o que aprendi, juntamente com minhas ideias e estilo pessoal.
+
 
